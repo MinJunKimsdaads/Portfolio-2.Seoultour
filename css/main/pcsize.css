@@ -766,7 +766,7 @@
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 20px;
         color: gray;
-        margin-right: 20px;
+        /* margin-right: 20px; */
     }
 
     #information div h4:first-child:hover {
@@ -853,19 +853,4 @@
         cursor: pointer;
         background-color: gray;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
 }
