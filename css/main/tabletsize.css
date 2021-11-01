@@ -711,7 +711,7 @@
         background-color: black;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        margin-top: 60%;
+        margin-top: 30%;
     }
 
     #footer #description_footer {
