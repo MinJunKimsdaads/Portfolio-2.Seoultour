@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 폰트라인  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+
+    <!-- <script src = "js//test.js"></script> -->
+
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="css//sub//mobilesize.css">
+    <link rel="stylesheet" href="css//sub//tabletsize_2.css">
+    <link rel="stylesheet" href="css//sub//tabletsize.css">
+    <link rel="stylesheet" href="css//sub//pcsize.css">
+
+    <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+          margin: 0;
+          padding: 0;
+          background-color: #f0ede6;
+      }
+
+      li, ol, ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+  </style>
+
+</head>
+<body>
+  <div id="wrap">
+    <!-- 헤더임 -->
+    <header>
+      <div id = "container_header">
+          <div id = "item_logo_header">
+              <a href="index.html"><img src="./image/common/newlogo.png" alt = "x"></a>
+          </div>
+          <ul id = "item_nav_header">
+              <li>브랜드</li>
+              <li>어트랙션</li>
+              <li>맛집</li>
+              <li>축제</li>
+              <li>갤러리</li>
+          </ul> 
+      </div>
+    </header>
+
+  <div id = "container">
+    <div id ="image_1">
+        <button id = "button_1" onclick="attraction('1');">
+            <span id = "tooltip">경복궁<br></span>
+        </button>
+        <button id = "button_2" onclick="attraction('2');">
+            <span id = "tooltip">창덕궁<br></span>
+        </button>
+        <button id = "button_3" onclick="attraction('3');">
+            <span id = "tooltip">명동성당<br></span>
+        </button>
+        <button id = "button_4" onclick="attraction('4');">
+            <span id = "tooltip">덕수궁돌담길<br></span>
+        </button>
+        <button id = "button_5" onclick="attraction('5');">
+            <span id = "tooltip">서울로7017<br></span>
+        </button>
+        <button id = "button_6" onclick="attraction('6');">
+            <span id = "tooltip">안녕인사동<br></span>
+        </button>
+        <button id = "button_7" onclick="attraction('7');">
+            <span id = "tooltip">익선동 한옥거리<br></span>
+        </button>
+        <button id = "button_8" onclick="attraction('8');">
+            <span id = "tooltip">은평한옥마을<br></span>
+        </button>
+        <button id = "button_9" onclick="attraction('9');">
+            <span id = "tooltip">아쿠아플라넷63<br></span>
+        </button>
+        <button id = "button_10" onclick="attraction('10');">
+            <span id = "tooltip">노들섬<br></span>
+        </button>
+        <button id = "button_11" onclick="attraction('11');">
+            <span id = "tooltip">세빛섬<br></span>
+        </button>
+        <button id = "button_12" onclick="attraction('12');">
+            <span id = "tooltip">어린이대공원<br></span>
+        </button>
+        <button id = "button_13" onclick="attraction('13');">
+            <span id = "tooltip">도산공원<br></span>
+        </button>
+        <button id = "button_14" onclick="attraction('14');">
+            <span id = "tooltip">하늘공원<br></span>
+        </button>
+        <button id = "button_15" onclick="attraction('15');">
+            <span id = "tooltip">석촌호수공원<br></span>
+        </button>
+        <button id = "button_16" onclick="attraction('16');">
+            <span id = "tooltip">홍제천<br></span>
+        </button>
+        <button id = "button_17" onclick="attraction('17');">
+            <span id = "tooltip">서대문자연사박물관<br></span>
+        </button>
+        <button id = "button_18" onclick="attraction('18');">
+            <span id = "tooltip">서울식물원<br></span>
+        </button>
+        <button id = "button_19" onclick="attraction('19');">
+            <span id = "tooltip">태릉, 강릉<br></span>
+        </button>
+        <button id = "button_20" onclick="attraction('20');">
+            <span id = "tooltip">홍대 문화공원<br></span>
+        </button>
+        <button id = "button_21" onclick="attraction('21');">
+            <span id = "tooltip">고덕 수변생태공원<br></span>
+        </button> 
+    </div>
+
+    <div id = "container_description">
+        <div id = "description_1">
+            <img src="image/sub/description/1/1.jpg">
+            <button id ="button1_description" onclick="more(1)">자세히</button>
+            <button id ="button1_reset" onclick="reset(1)">X</button>
+            <div id = "moredescription_1"><br>
+                <h3>설명</h3> 
+                <p>
+                    경복궁은 5대궁인 경희궁, 덕수궁, 창경궁, 창덕궁 중 가장 큰 궁궐로<br>
+                    조선 왕조의 주요 궁궐 역할을 했다.<br>
+                    2010년에 완전히 복원된 광화문, 고종과 명성황후가 머물던 건천궁,<br>
+                    경복궁의 후원인 향원정 등이 자리하고 있다.<br>
+                    경복궁을 방문할 때 국립 고궁 박물관과 국립 민속 박물관 또한 함께 방문하기 좋다.<br>
+                    경복궁은 조선 왕조 최고의 궁궐인 만큼 생각보다 넓다.<br>
+                    동선은 자유롭게 조정할 수 있다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p>02-3700-3900</p>
+                <h3>교통정보</h3>
+                <p>5호선 광화문역 2번 출구 도보 10분<br>
+                    3호선 경복궁 5번 출구 도보 5분
+                </p>
+                <h3><a href = "http://www.royalpalace.go.kr/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_2">
+            <img src="image/sub/description/2/1.jpg">
+            <button id ="button2_description" onclick="more(2)">자세히</button>
+            <button id ="button2_reset" onclick="reset(2)">X</button>
+            <div id = "moredescription_2">
+                <h3>설명</h3> 
+                <p>
+                    창덕궁은 서울에서 두 번째로 유네스코 선정 세계문화유산으로 등재되었다.<br>
+                    동아시아 궁전 건축사에 있어 비정형적 조형미를 간직한 대표적 궁으로<br>
+                    변 자연환경과의 완벽한 조화와 배치가 탁월하다’는 이유로 선정됐다.<br>
+                    창덕궁은 생태계의 보존 상태가 좋고 연못과 정원 등에는 차경이 두드러진다.
+                </p>
+                <h3>전화번호</h3>
+                <p>02-3668-2300</p>
+                <h3>교통정보</h3>
+                <p>
+                    5호선 종로3가역 6번 출구 도보 10분<br>
+                    3호선 안국역 3번 출구 도보 5분
+                </p>
+                <h3><a href = "http://www.cdg.go.kr/default.jsp">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_3">
+            <img src="image/sub/description/3/1.jpg">
+            <button id ="button3_description" onclick="more(3)">자세히</button>
+            <button id ="button3_reset" onclick="reset(3)">X</button>
+            <div id = "moredescription_3">
+                <h3>설명</h3> 
+                <p>
+                    명동성당은 우리나라 최초의 본당이며 한국 천주교회의 상징이다.<br>
+                    명동성당은 우리나라 기독교 역사뿐 아니라<br>
+                    정치, 사회, 문화 전반에 걸쳐 큰 영향을 미친 터전이다.<br>
+                    내부는 십자형 평면에 공중 회랑과 높은 창, 무지개 형상의 궁륭 천장으로 되어 있고,
+                    외부는 고딕 장식을 통해 웅장함을 드러내고 있다.<br> 
+                    빼놓지 말고 들러 봐야 할 곳은 제단 아래쪽에 있는 지하 성당이다.<br>
+                    여기엔 19세기 천주교 박해로 희생당한 성인 유해 5위와 일반 순교자 유해 4위를 봉안하고 있다.
+                </p>
+                <h3>전화번호</h3>
+                <p>02-774-1784</p>
+                <h3>교통정보</h3>
+                <p>4호선 명동 5번, 8번 출구 도보 10분<br>
+                   2호선 을지로입구 5번 출구 도보 15~20분
+                </p>
+                <h3><a href = "http://www.mdsd.or.kr/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_4">
+            <img src="image/sub/description/4/1.jpg">
+            <button id ="button4_description" onclick="more(4)">자세히</button>
+            <button id ="button4_reset" onclick="reset(4)">X</button>
+            <div id = "moredescription_4">
+                <h3>설명</h3> 
+                <p>
+                    기존의 도로를 보행자 중심의 도로로 재정비하고,<br>
+                    보행자를 위해 보도와 차도 공존도로 및 푸르름이 가득한 가로공간인<br>
+                    녹도의 개념을 복합적으로 도입한 우리나라 최초의 사례로 길이는 900m이다.
+                </p>
+                <h3>전화번호</h3>
+                <p>02-751-0734</p>
+                <h3>교통정보</h3>
+                <p>2,1호선 시청역 3번 출구에서 202m<br>
+                </p>
+                <h3><a href = "http://www.deoksugung.go.kr/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_5">
+            <img src="image/sub/description/5/1.jpg">
+            <button id ="button5_description" onclick="more(5)">자세히</button>
+            <button id ="button5_reset" onclick="reset(5)">X</button>
+            <div id = "moredescription_5">
+                <h3>설명</h3> 
+                <p>
+                    서울로7017은 70년에 만들어진 서울역고가가 안전에<br>
+                    문제점이 도출되면서 철거가 될 상황에 놓여지게 되었는데<br>
+                    이를 서울의 관문이자 지역재생의 촉매제<br>
+                    역할을 담당하는 17개의 사람길로 재탄생시킨 도시재생 사업이다.<br>
+                    6개 구역을 잇는 공중보행로의 기능과 녹지광장을 결합하는 살아있는 식물도감이자<br>
+                    1km 도심전망대가 있고, 찻길에서 사람길로 재탄생했다.
+                </p>
+                <h3>전화번호</h3>
+                <p>02-313-7017</p>
+                <h3>교통정보</h3>
+                <p>경의중앙선·공항철도 서울역 7·8번 출구 5분<br>
+                   4호선 회현역 4·5번 출구 5분
+                </p>
+                <h3><a href = "http://seoullo7017.co.kr/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_6">
+            <img src="image/sub/description/6/1.jpg">
+            <button id ="button6_description" onclick="more(6)">자세히</button>
+            <button id ="button6_reset" onclick="reset(6)">X</button>
+            <div id = "moredescription_6">
+                <h3>설명</h3> 
+                <p>
+                    경복궁은 5대궁인 경희궁, 덕수궁, 창경궁, 창덕궁 중 가장 큰 궁궐로<br>
+                    조선 왕조의 주요 궁궐 역할을 했다.<br>
+                    2010년에 완전히 복원된 광화문, 고종과 명성황후가 머물던 건천궁,<br>
+                    경복궁의 후원인 향원정 등이 자리하고 있다.<br>
+                    경복궁을 방문할 때 국립 고궁 박물관과 국립 민속 박물관 또한 함께 방문하기 좋다.<br>
+                    경복궁은 조선 왕조 최고의 궁궐인 만큼 생각보다 넓다.<br>
+                    동선은 자유롭게 조정할 수 있다.
+                </p>
+                <h3>전화번호</h3>
+                <p>02-3700-3900</p>
+                <h3>교통정보</h3>
+                <p>5호선 광화문역 2번 출구 도보 10분<br>
+                    3호선 경복궁 5번 출구 도보 5분
+                </p>
+                <h3><a href = "http://www.royalpalace.go.kr/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_7">
+            <img src="image/sub/description/7/1.jpg">
+            <button id ="button7_description" onclick="more(7)">자세히</button>
+            <button id ="button7_reset" onclick="reset(7)">X</button>
+            <div id = "moredescription_7">
+                <h3>설명</h3> 
+                <p>
+                    이비스앰배서더 인사동에서 낙원상가를 잇는 801m의 한옥 거리.<br>
+                    근처 인사동 거리와는 또 다르게 퓨전식으로 개조된 카페, 음식점,<br>
+                    각종 샵들이 자리잡고 있어서 많은 연인들이 찾는 서울 대표 데이트 코스다.<br>
+                    작은 거리지만 겨울이나 밤에 방문하면 더 운치 있는 곳이다.
+                </p>
+                <h3>전화번호</h3>
+                <p></p>
+                <h3>교통정보</h3>
+                <p>1, 3, 5 호선 종로 3가역 4번 출구에서 142m<br>
+                </p>
+                <h3>웹사이트 바로가기</h3>
+            </div>
+        </div>
+        <div id = "description_8">
+            <img src="image/sub/description/8/1.jpg">
+            <button id ="button8_description" onclick="more(8)">자세히</button>
+            <button id ="button8_reset" onclick="reset(8)">X</button>
+            <div id = "moredescription_8">
+                <h3>설명</h3> 
+                <p>
+                    은평구 진관동에 위치한 은평한옥마을.<br> 
+                    모던하고 깔끔하게 지어진 한옥이 북한산과 어우러져 마을의 고즈넉한 느낌을 더한다.<br>
+                    넓은 길 사이로 가까이 서면 꽤 높게 지어진 한옥들 사이에서<br>
+                    사진을 찍으면 조선시대를 배경으로 한 영화 세트장에 있는 느낌도 든다.<br>
+                    한옥마을에서 이어진 데크길을 따라 걷다 보면<br> 
+                    셋이서 문학관, 진관사 등 둘러볼 곳도 많다. 그림 같은 거리에서 한옥의 미를 느껴보자.
+                </p>
+                <h3>전화번호</h3>
+                <p>02-351-6114</p>
+                <h3>교통정보</h3>
+                <p>서울 은평구 연서로50길 8 (진관동, 은평역사한옥박물관)  은평한옥마을<br>
+                </p>
+                <h3><a href = "http://www.cf13.wazzang.com/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_9">
+            <img src="image/sub/description/9/1.png">
+            <button id ="button9_description" onclick="more(9)">자세히</button>
+            <button id ="button9_reset" onclick="reset(9)">X</button>
+            <div id = "moredescription_9">
+                <h3>설명</h3> 
+                <p>
+                    아쿠아플라넷63은 63빌딩에 위치한 다양한 해양생물과<br>
+                    아쿠아 퍼포먼스를 함께 즐길 수 있는 아쿠아리움이다.<br>
+                    길목 거북이, 호주 폐어를 볼 수 있는 아쿠아밸리, 작은 발톱 수달을 볼 수 있는 수달플라넷,<br>
+                    수초들과 함께 물고기들을 볼 수 있는 아쿠아플라넷 가든이 있다.<br>
+                    이외에도 해파리, 거북이 뿐만 아니라 지하 2층으로 가면 펭귄,<br>
+                    매가오리, 유니콘피시 같은 다양한 물고기들을 만나볼 수 있다.<br>
+                    아쿠아플라넷63에서는 매일 공연을 진행하고 있는데 펭귄, 가오리,<br>
+                    수달, 물범 그리고 이곳의 하이라이트 공연인 머메이드 쇼가 있다.
+                </p>
+                <h3>전화번호</h3>
+                <p>02-1833-7001</p>
+                <h3>교통정보</h3>
+                <p>서울 영등포구 63로 50 (여의도동, 63한화생명빌딩)<br>
+                </p>
+                <h3><a href = "https://www.aquaplanet.co.kr/63/index.do">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_10">
+            <img src="image/sub/description/10/1.png">
+            <button id ="button10_description" onclick="more(10)">자세히</button>
+            <button id ="button10_reset" onclick="reset(10)">X</button>
+            <div id = "moredescription_10">
+                <h3>설명</h3> 
+                <p>
+                    용산구에 위치한 노들섬은 음악을 매개로한 복합문화 공간이다.<br>
+                    노들섬에는 라이브하우스, 뮤직라운지 류, 노들서가,<br>
+                    식물도, 스페이스445, 앤테이블 등의 시설이 있다.
+                </p>
+                <h3>전화번호</h3>
+                <p>02-749-4500</p>
+                <h3>교통정보</h3>
+                <p>5호선 광화문역 2번 출구 도보 10분<br>
+                    3호선 경복궁 5번 출구 도보 5분
+                </p>
+                <h3><a href = "http://www.royalpalace.go.kr/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_11">
+            <img src="image/sub/description/11/1.jpg">
+            <button id ="button11_description" onclick="more(11)">자세히</button>
+            <button id ="button11_reset" onclick="reset(11)">X</button>
+            <div id = "moredescription_11">
+                <h3>설명</h3> 
+                <p>
+                    한강을 아름답게 밝혀주는 세 개의 빛나는 섬’이란<br>
+                    의미를 지닌 세빛섬은 세계 최초의 수상 문화공간이다.<br>
+                    가빛섬, 채빛섬, 솔빛섬, 예빛섬 등 총 4개의 인공섬으로 이뤄져 있으며,<br>
+                    웨딩 컨벤션을 비롯해 이탈리안 레스토랑, 뷔페, 카페가 마련되어 있고,<br> 
+                    수상 레저를 즐길 수 있는 요트, 튜브스터와<br> 
+                    종 전시, 공연, 이벤트가 이뤄지는 공간으로 활용되고 있다.<br>
+                    서울의 야간명소로도 손꼽히는 세빛섬은 화려하고<br>
+                    아름다운 LED 조명이 한강과 어우러지는 환상적인 야경을 자랑하며,<br>
+                    각종 드라마와 영화촬영지로 각광받고 있다.<br> 
+                </p>
+                <h3>전화번호</h3>
+                <p>1566-3433</p>
+                <h3>교통정보</h3>
+                <p>3,7,9호선 고속터미널역 8-1번 출구 (약 650m, 도보 15분)<br>
+                </p>
+                <h3><a href = "http://www.somesevit.co.kr/kr/index.do">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_12">
+            <img src="image/sub/description/12/1.jpg">
+            <button id ="button12_description" onclick="more(12)">자세히</button>
+            <button id ="button12_reset" onclick="reset(12)">X</button>
+            <div id = "moredescription_12">
+                <h3>설명</h3> 
+                <p>
+                    어린이대공원은 서울 광진구에 위치해 있으며 가족 단위의 휴식공간이다.<br>
+                    동물나라, 놀이동산, 자연나라 등으로 구성되어있다.<br>
+                    동물 먹이 주기 관람과 체험, 텃밭 체험 등이 가능하며<br>
+                    물놀이를 할 수 있는 수경시설이 있다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p>02-450-9311</p>
+                <h3>교통정보</h3>
+                <p>
+                    5호선 아차산 4번 출구 도보 5분<br>
+                    7호선 어린이대공원 1번 출구 도보 5분<br>
+                    2호선 건대입구 3번 출구 도보 10 ~ 15분
+                </p>
+                <h3><a href = "https://www.sisul.or.kr/open_content/childrenpark/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_13">
+            <img src="image/sub/description/13/1.jpg">
+            <button id ="button13_description" onclick="more(13)">자세히</button>
+            <button id ="button13_reset" onclick="reset(13)">X</button>
+            <div id = "moredescription_13">
+                <h3>설명</h3> 
+                <p>
+                    도산공원은 서울 강남구 신사동에 있는 공원으로<br> 
+                    도산 안창호의 애국정신과 교육 정신을 기리고자 조성되었다.<br>
+                    매년 3월 10일 추모기념행사가 열린다.<br>
+                    기념관에는 임시정부 사료집과 도산일기 등이 전시되어 있으며<br>
+                    터치스크린을 이용해 도산어록을 볼 수 있다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p>02-3423-6285</p>
+                <h3>교통정보</h3>
+                <p>3호선 압구정 2번, 3번 출구 도보 10분<br>  
+                </p>
+                <h3><a href = "http://www.royalpalace.go.kr/">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_14">
+            <img src="image/sub/description/14/1.jpg">
+            <button id ="button14_description" onclick="more(14)">자세히</button>
+            <button id ="button14_reset" onclick="reset(14)">X</button>
+            <div id = "moredescription_14">
+                <h3>설명</h3> 
+                <p>
+                    하늘공원은 2002년 제17회 월드컵축구대회를 기념하며 난지도 쓰레기매립장을<br> 
+                    복원하기 위해 개원한 월드컵경기장 일대 5대 공원 중 하나이다.<br> 
+                    전체적인 형태는 정사각형으로 이뤄져 있으며<br> 
+                    억새 식재지·순초지·암석원·혼생초지·해바라기 식재지 등 테마별로 구성되어 있다.<br> 
+                </p>
+                <h3>전화번호</h3>
+                <p>02-300-5501</p>
+                <h3>교통정보</h3>
+                <p>6호선 월드컵경기장역 1번 출구 도보 25분<br>
+                </p>
+                <h3><a href = "http://parks.seoul.go.kr/template/sub/worldcuppark.do">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_15">
+            <img src="image/sub/description/15/1.jpg">
+            <button id ="button15_description" onclick="more(15)">자세히</button>
+            <button id ="button15_reset" onclick="reset(15)">X</button>
+            <div id = "moredescription_15">
+                <h3>설명</h3> 
+                <p>
+                    석촌호수공원은 시민들에게 사랑받는 휴식처이다.<br>
+                    송파대로를 기준으로 서호와 동호로 나누어져 있으며,<br> 
+                    한 바퀴를 도는 동안 롯데월드어드벤처, 카페거리,<br>
+                     방이동먹자골목 등 다양한 풍경을 만나볼 수 있다.<br> 
+                    매년 봄, 벚꽃이 만개할 때 ‘석촌호수 벚꽃축제’가 열리기도 한다.<br> 
+                </p>
+                <h3>전화번호</h3>
+                <p>02-412-0190</p>
+                <h3>교통정보</h3>
+                <p>2호선 잠실역 2번, 3번 출구로 나와서 도보로 200미터<br>
+                </p>
+                <h3><a href = "">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_16">
+            <img src="image/sub/description/16/1.jpg">
+            <button id ="button16_description" onclick="more(16)">자세히</button>
+            <button id ="button16_reset" onclick="reset(16)">X</button>
+            <div id = "moredescription_16">
+                <h3>설명</h3> 
+                <p>
+                    길이 13.92㎞의 홍제천은 한강의 제1지류로서<br>
+                    종로구·서대문구·마포구에 흐르는 하천이다.<br>
+                    조선시대에 홍제천 연안에 중국의 사신이나 관리가<br>
+                    묵어가던 홍제원이 있었던 까닭으로 '홍제원천'이라고도 한다.<br>
+                    홍제천 인근의 폭포와 자전거길이 유명하다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p>02-330-1025</p>
+                <h3>교통정보</h3>
+                <p>3호선 홍제 1번, 4번 출구 도보 5분<br>
+                   6호선 마포구청 2번, 3번 출구 도보 5분
+                </p>
+                <h3><a href = "https://www.sdm.go.kr/hongje/index.do">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_17">
+            <img src="image/sub/description/17/1.jpg">
+            <button id ="button17_description" onclick="more(17)">자세히</button>
+            <button id ="button17_reset" onclick="reset(17)">X</button>
+            <div id = "moredescription_17">
+                <h3>설명</h3> 
+                <p>
+                    서대문자연사박물관은 서대문구에 위치한 국내 최초로<br>
+                    공공기관이 직접 계획하고 설립한 자연사박물관이다.<br>
+                    2003년 개관하여 자연백과사전, 지구환경, 생명 진화,<br>
+                    화산폭발과정 등 다양한 것들을<br>
+                    전시하여 아이들과 함께 방문하기에 적합한 것으로 알려져 있다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p>02-330-8899</p>
+                <h3>교통정보</h3>
+                <p>2호선 신촌역 3번, 4번출구<br>
+                </p>
+                <h3><a href = "https://namu.sdm.go.kr/site/main/home">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_18">
+            <img src="image/sub/description/18/1.jpg">
+            <button id ="button18_description" onclick="more(18)">자세히</button>
+            <button id ="button18_reset" onclick="reset(18)">X</button>
+            <div id = "moredescription_18">
+                <h3>설명</h3> 
+                <p>
+                    강서구 마곡에 위치한 서울식물원은 공원과 식물원이<br>
+                    유기적으로 결합한 서울 최초 도시형 식물원이다.<br>
+                    숲, 정원, 호수, 습지가 공존하는 공간으로 주제원에는<br>
+                    세계 12개 도시를 주제로 식물을 전시한 대형 온실이 위치해 있다.<br>
+                    김포공항(10분), 인천공항(40분)과 인접해 있고
+                    지하철역과도 직접 연결돼 편리하게 찾아갈 수 있다.<br>
+                    서울식물원은 세계 12개 도시 식물과 식물문화를<br> 
+                    소개하고 도시의 생태감수성을 높이기 위해 조성되었다.<br>
+                    서울식물원을 중심으로 수도권 광역 녹지체계를 구축하여 시민과 자연을 연결하고 교육,<br>
+                    문화행사 등 폭넓은 참여 기회를 제공하여 시민의 삶을 풍요롭게 할 예정이다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p>02-2104-9716</p>
+                <h3>교통정보</h3>
+                <p>9호선·공항철도 마곡나루역 3번 출구<br>
+                </p>
+                <h3><a href = "https://botanicpark.seoul.go.kr/front/main.do">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_19">
+            <img src="image/sub/description/19/1.jpg">
+            <button id ="button19_description" onclick="more(19)">자세히</button>
+            <button id ="button19_reset" onclick="reset(19)">X</button>
+            <div id = "moredescription_19">
+                <h3>설명</h3> 
+                <p>
+                    태릉과 강릉은 서울 노원구 화랑로에 위치한 조선시대 왕릉으로<br>
+                    태릉과 강릉 중간 지역엔 대한체육회에서 운영하는 태릉선수촌이 있다.<br>
+                    문정왕후의 능인 태릉과 명종과 인순왕후의<br>
+                    능인 강릉의 합장으로 서울 노원구 공릉동에 위치해 있다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p>02-948-5668</p>
+                <h3>교통정보</h3>
+                <p> 7호선 태릉입구역 7번 출구 1155번, 1156번 환승<br>
+                    1호선 석계역 6번 출구 1155번, 1156번 환승<br>
+                    6호선 화랑대역 1번 출구 202번, 1225번 환승<br>
+                </p>
+                <h3><a href = "http://royaltombs.cha.go.kr/html/HtmlPage.do?pg=/new/html/portal_01_05_01.jsp&mn=RT_01_05">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_20">
+            <img src="image/sub/description/20/1.png">
+            <button id ="button20_description" onclick="more(20)">자세히</button>
+            <button id ="button20_reset" onclick="reset(20)">X</button>
+            <div id = "moredescription_20">
+                <h3>설명</h3> 
+                <p>
+                    홍대입구역에서 가까운 홍대 놀이터에서는 예술시장인 프리마켓이 자주 열린다.<br>
+                    홍대의 프리마켓은 누구나 자유롭게 참여가 가능한 소통의 장이며 축제다.<br>
+                    참가자들은 자신의 창작품을 마음껏 선보일 수 있다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p></p>
+                <h3>교통정보</h3>
+                <p>6호선 상수역2번 출구에서 600m 이내<br>
+                </p>
+                <h3><a href = "#">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+        <div id = "description_21">
+            <img src="image/sub/description/21/1.jpg">
+            <button id ="button21_description" onclick="more(21)">자세히</button>
+            <button id ="button21_reset" onclick="reset(21)">X</button>
+            <div id = "moredescription_21">
+                <h3>설명</h3> 
+                <p>
+                    고덕 수변생태공원은 강동구 고덕동에 위치한 생태공원이다.<br>
+                    한강과 가까우며 습지, 숲 등의 주변 자연과 잘 어우러져 있다.<br>
+                    또한, 자전거 도로와 산책로가 조성되어 있고,<br>
+                    다양한 동식물이 서식하고 있으며 조류관찰대를 이용할 수 있다.<br>
+                    자연적으로 초지와 습지가 발달한 곳이다.<br>
+                </p>
+                <h3>전화번호</h3>
+                <p>02-426-0755</p>
+                <h3>교통정보</h3>
+                <p>5호선 상일동역 1번 출구<br>
+                </p>
+                <h3><a href = "https://hangang.seoul.go.kr/archives/352">웹사이트 바로가기</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button id = "change_map" onclick="ChangeMap()">일반 지도</button>
+    <button id = "change_subway" onclick="ChangeSubway()">지하철 노선도</button> -->
+</div>
+
+
+  <div id = "footer">
+    <div id = "description_footer">
+        <div id = "information">
+            <h1>About us Now In Seoul</h1>
+            <details>
+                <summary>찾아오시는 길</summary>
+                <p>03190, 서울 종로구 청계천로85 (31빌딩) 6층 TEL:02-3788-0800</p>
+                <p>대표이사 길기연 사업자등록번호 : 245-82-00220</p>
+            </details>
+            <p>Copyright 2021. Cotieshop All rights reserved.</p>
+            <div>
+                <h4>페이스북</h4>
+                <h4>인스타그램</h4>
+                <h4>카카오</h4>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<script>
+     document.getElementById("image_1").addEventListener(
+            "mousemove", function mousein() {
+                var Image1 = document.getElementById("image_1");
+                var screen = window.innerWidth;
+                Image1.style.transition = "2s";
+                Image1.style.width = "60%";
+                Image1.style.borderRadius = "3% 0 0 3%";
+
+            //     if(screen < 900) {
+            //     Image1.style.width = "98%";
+            // }
+            }
+            
+        )
+    document.getElementById("container").addEventListener(
+            "mouseleave", function mouseout() {
+                var Image2 = document.getElementById("image_1");
+                Image2.style.transition = "2s";
+                Image2.style.width = "98%";
+                Image2.style.borderRadius = "3%";
+            }
+        )
+
+        function attraction(i) {
+            var a = i+1;
+            var b = i-1
+            var screen = window.innerWidth;
+            var Image = document.getElementById("image_1");
+            for(a; a < 22; a++) {
+                var aa = document.getElementById("description_"+[a]);
+                aa.style.display = "none";
+            }
+            for(b; b > 0; b--) {
+                var bb = document.getElementById("description_"+[b]);
+                bb.style.display = "none";
+            }
+            var cc = document.getElementById("description_"+[i]);
+            cc.style.display = "block";
+            var reset = document.getElementById("button"+[i]+"_reset");
+            reset.style.display = "none";
+
+            // if(screen < 900) {
+            //     Image.style.display = "none";
+            // }
+
+            // var dd = document.getElementById("button"+[i]+"_reset");
+            // dd.style.display = "none";
+        }
+
+        function more(i) {
+            var a = i+1;
+            var b = i-1;
+            var screen = window.innerWidth;
+            for(a; a < 22; a++) {
+                var aa = document.getElementById("description_"+[a]);
+                aa.style.display = "none";
+            }
+            for(b; b > 0; b--) {
+                var bb = document.getElementById("description_"+[b]);
+                bb.style.display = "none";
+            }
+            var Image = document.getElementById("image_1");
+            Image.style.display = "none";
+            var description = document.getElementById("description_"+[i]);
+            description.style.transform = "translate(-150%)";
+            description.style.transition = "1s";
+            var moredescription = document.getElementById("moredescription_"+[i]);
+            moredescription.style.display = "block";
+            moredescription.style.transform = "translate(70%)";
+            // moredescription.style.display = "absolute";
+            // moredescription.style.top = "-10%";
+            var description1 = document.getElementById("button"+[i]+"_description");
+            description1.style.display = "none";
+            var reset = document.getElementById("button"+[i]+"_reset");
+            reset.style.display = "block";  
+        }
+
+        function reset(i) {
+            var Image = document.getElementById("image_1");
+            Image.style.display = "block";
+            var description = document.getElementById("description_"+[i]);
+            description.style.transform = "translate(0%)";
+            description.style.transition = "1s";
+            var moredescription = document.getElementById("moredescription_"+[i]);
+            moredescription.style.display = "none";
+            var description1 = document.getElementById("button"+[i]+"_description");
+            description1.style.display = "block";
+            var reset = document.getElementById("button"+[i]+"_reset");
+            reset.style.display = "none";
+        }
+</script>
+</body>
+</html>

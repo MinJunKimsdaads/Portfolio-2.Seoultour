@@ -1,0 +1,871 @@
+@media screen and  (min-width:1380px) {
+    #wrap {
+        width: 100%;
+        height: auto;
+        background-color: #f0ede6;
+    }
+
+    header {
+        margin: 0 auto;
+        width: 100%;
+        height: 150px;
+        /* background-color: aqua; */
+    }
+
+    #container_header {
+        position: relative;
+        top: 0; 
+        left: 0;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        row-gap: 0;
+        column-gap: 0;
+        /* background-color: brown; */
+        
+    }
+
+    #container_header #item_logo_header {
+        width: 35%;
+        height: 70%;
+        /* justify-self: start; */
+        /* background-color: coral;  */
+        margin-left: 10%;
+        text-align: center;
+        align-self: end;
+    }
+
+    #container_header #item_logo_header img {
+        width: 70%;
+        height: 100%;
+    }
+
+    #container_header #item_nav_header {
+        /* background-color: purple; */
+        display: grid;
+        grid-template-columns: 3fr 4fr 2fr 2fr 3fr;
+        grid-template-rows: 1fr;
+        margin-right: 30%;
+        column-gap: 7%;
+        /* border: solid black; */
+    }
+
+    #container_header #item_nav_header li {
+        /* background-color: royalblue; */
+        text-align: center;
+        align-self: end;
+        /* justify-self: stretch; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px;
+        position: relative;
+    }
+
+    #container_header #item_nav_header li:after {
+        content: "";
+        border-bottom: 3px black solid ;
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        width: 0%;
+        transition: all 0.2s ease;
+    }
+
+    #container_header #item_nav_header li::before {
+        content: "";
+        border-bottom: 3px black solid ;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        transition: all 0.2s ease;
+    }
+
+    #container_header #item_nav_header li:hover:after {
+        width: 55%;
+    }
+
+    #container_header #item_nav_header li:hover::before {
+        width: 55%;
+    }
+
+    #hambergernav {
+        display: none;
+    }
+
+    #container_slider {
+        width: 100%;
+        height: 1400px;
+        /* background-color: slateblue; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3.5fr 0.5fr;
+        justify-items: center;
+        row-gap: 0;
+        margin-top: 10%;
+    }
+
+    #container_slider #quote{
+        width: 50%;
+        height: auto;
+        text-align: center;
+        font-family: 'Noto Sans Display', sans-serif;
+        /* background-color: yellow; */
+        font-size: 50px;
+        align-self: start;
+        margin-top: -2%;
+        vertical-align: middle;
+        transform: scale(1.8);
+        z-index: 1;
+    }
+
+    #container_slider #quote:hover {
+        color: gray;
+    }
+
+    #container_slider #slider {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        transform: scale(1.1);
+        overflow: hidden;
+        margin-top: -5%;
+    }
+
+    #container_slider #slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container_slider #slider img:hover {
+        filter: brightness(0.5);
+    }
+
+    #container_slider #button_slider {
+        width: 100%;
+        height: 100%;
+        /* background-color: yellow; */
+        display: grid;
+    }
+
+    #container_slider #button_slider a {
+        text-align: center;
+        justify-self: center;
+        align-self:center;
+        /* border: solid black; */
+        width: 150px;
+        height: 150px; 
+    }
+
+    #container_slider #button_slider a:visited {
+        color: black;
+    }
+
+    #container_slider #button_slider a p  {
+        position: relative;
+        top: 40px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 30px;
+        
+    }
+
+    #container_slider #button_slider a img {
+        width: 130%;
+        height: 60%;
+        position: relative;
+        top: -35%;
+        left: -15%;
+    }
+
+    #container_section {
+        position:relative;
+        top: 200px;
+        width: 100%;
+        height: 5600px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 0.8fr;
+        row-gap: 250px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #container_brand {
+        /* background-color: red; */
+        display: grid;
+        grid-template-rows: 1.1fr 0.4fr;
+    }
+
+    #video_brand {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        /* background-color: aqua; */
+    }
+
+    #video_brand div {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #video_brand video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit:fill;
+    }
+
+    #video_brand video:hover {
+        filter: brightness(0.5);
+    }
+
+    #description_brand {
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        /* background-color: hotpink; */
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    #first_description {
+        /* background-color: blue; */
+        display: grid;
+        grid-template-rows: 1fr 1.5fr;
+    }
+
+    #second_description {
+        /* background-color: coral; */
+        display: grid;
+        grid-template-rows: 1fr 1.5fr;
+    }
+
+    #description_brand #first_description h3 {
+        text-align: left;
+        margin: 30px 0 0 0;
+        /* background-color: yellow; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+    }
+
+    #description_brand #second_description h3 {
+        text-align: right;
+        margin: 30px 0 0 0;
+        /* background-color: yellow; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+    }
+
+
+    #button_brand a {
+        font-size: 30px;
+        margin-left: 0;
+        display: block;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #button_brand a:visited {
+        color: black;
+    }
+
+    #button_brand a:hover {
+        color: gray;
+    }
+
+    #button_brand img {
+        width: 32%;
+        height: 20%;
+        margin-left: -20px;
+    }
+
+    #description_brand #second_description p {
+        /* background-color: gray; */
+        text-align: right;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    #container_attraction {
+        /* background-color: red; */
+        display: grid;
+        grid-template-rows: 1.1fr 0.4fr;
+    }
+
+    #video_attraction {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        /* background-color: aqua; */
+    }
+
+    #video_attraction div {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #video_attraction video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit:fill;
+    }
+
+    #video_attraction video:hover {
+        filter: brightness(0.5);
+    }
+
+    #description_attraction {
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        /* background-color: hotpink; */
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    #first_description {
+        /* background-color: blue; */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #second_description {
+        /* background-color: coral; */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #description_attraction #first_description h3 {
+        text-align: left;
+        margin: 30px 0 0 0;
+        /* background-color: yellow; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+    }
+
+    #description_attraction #second_description h3 {
+        text-align: right;
+        margin: 30px 0 0 0;
+        /* background-color: yellow; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+    }
+
+    #button_attraction a {
+        font-size: 30px;
+        margin-left: 0;
+        display: block;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #button_attraction a:visited {
+        color: black;
+    }
+
+    #button_attraction a:hover {
+        color: gray;
+    }
+
+    #button_attraction img {
+        width: 32%;
+        height: 20%;
+        margin-left: -20px;
+    }
+
+    #description_attraction #second_description p {
+        /* background-color: gray; */
+        text-align: right;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    #container_food {
+        /* background-color: red; */
+        display: grid;
+        grid-template-rows: 1.1fr 0.4fr;
+    }
+
+    #video_food {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        /* background-color: aqua; */
+    }
+
+    #video_food div {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #video_food video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit:fill;
+    }
+
+    #video_food video:hover {
+        filter: brightness(0.5);
+    }
+
+    #description_food {
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        /* background-color: hotpink; */
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    #first_description {
+        /* background-color: blue; */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #second_description {
+        /* background-color: coral; */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #description_food #first_description h3 {
+        text-align: left;
+        margin: 30px 0 0 0;
+        /* background-color: yellow; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+    }
+
+    #description_food #second_description h3 {
+        text-align: right;
+        margin: 30px 0 0 0;
+        /* background-color: yellow; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+    }
+
+    #button_food a {
+        font-size: 30px;
+        margin-left: 0;
+        display: block;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #button_food a:visited {
+        color: black;
+    }
+
+    #button_food a:hover {
+        color: gray;
+    }
+
+    #button_food img {
+        width: 32%;
+        height: 20%;
+        margin-left: -20px;
+    }
+
+    #description_food #second_description p {
+        /* background-color: gray; */
+        text-align: right;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    #container_carnival {
+        /* background-color: red; */
+        display: grid;
+        grid-template-rows: 1.1fr 0.4fr;
+    }
+
+    #video_carnival {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        /* background-color: aqua; */
+    }
+
+    #video_carnival div {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #video_carnival video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit:fill;
+    }
+
+    #video_carnival video:hover {
+        filter: brightness(0.5);
+    }
+
+    #description_carnival {
+        width: 80%;
+        margin: 0 auto;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        /* background-color: hotpink; */
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    #first_description {
+        /* background-color: blue; */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #second_description {
+        /* background-color: coral; */
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #description_carnival #first_description h3 {
+        text-align: left;
+        margin: 30px 0 0 0;
+        /* background-color: yellow; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+    }
+
+    #description_carnival #second_description h3 {
+        text-align: right;
+        margin: 30px 0 0 0;
+        /* background-color: yellow; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 50px;
+    }
+
+    #button_carnival a {
+        font-size: 30px;
+        margin-left: 0;
+        display: block;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #button_carnival a:visited {
+        color: black;
+    }
+
+    #button_carnival a:hover {
+        color: gray;
+    }
+
+    #button_carnival img {
+        width: 32%;
+        height: 20%;
+        margin-left: -20px;
+    }
+
+    #description_carnival #second_description p {
+        /* background-color: gray; */
+        text-align: right;
+        margin: 0;
+        font-size: 16px;
+    }
+
+
+    #container_gallery {
+        /* background-color: blue; */
+        display: grid;
+        grid-template-rows: 0.25fr 1fr;
+    }
+
+    #container_gallery h1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin: 0 0 0 0;
+        /* background-color: chocolate; */
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #container_gallery #slide {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        /* background-color: aqua; */
+        display: grid;
+        grid-template-rows: 7fr 0.5fr;
+        row-gap: 10%;
+    }
+
+    #container_gallery #slide #picture_slide div {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        /* background-color: lawngreen; */
+        position: relative;
+    }
+
+    #container_gallery #slide #picture_slide div img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        position: absolute;
+    }
+
+    #container_gallery #slide #picture_slide div img:hover {
+        filter: brightness(0.5);
+    }
+
+    #container_gallery #slide #button {
+        /* background-color: goldenrod; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        background-color: #f0ede6;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+
+    #container_gallery #slide #button #right {
+        width: 25%;
+        height: 100%;
+        justify-self: start;
+        border: #f0ede6;
+        background-color: #f0ede6;
+        /* background-color: red; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        /* color: blue; */
+        /* box-shadow: 5px 5px 5px black; */
+        /* border-radius: 10px 10px 10px 10px; */
+        position: relative;
+        text-align: center;
+        justify-self: end;
+        text-align: right;
+    }
+
+    #container_gallery #slide #button #left {
+        width: 25%;
+        height: 100%;
+        justify-self: end;
+        border: #f0ede6;
+        background-color: #f0ede6;
+        /* background-color: red; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+        /* box-shadow: 5px 5px 5px black; */
+        /* border-radius: 10px 10px 10px 10px; */
+        position: relative;
+        letter-spacing: 20px;
+        text-align: left;
+        justify-self: start;
+    }
+
+    #container_gallery #slide #button #right:hover {
+        cursor: pointer;
+    }
+
+    #container_gallery #slide #button #lefr:hover {
+        cursor: pointer;
+    }
+
+    #container_gallery #slide #button #right::after {
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid red;
+        width: 0;
+        bottom: -10px;
+        left: 25%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #container_gallery #slide #button #right:hover::after {
+        width: 70%;
+    }
+
+    #container_gallery #slide #button #left::after {
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid red;
+        width: 0;
+        bottom: -10px;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #container_gallery #slide #button #left:hover::after {
+        width: 80%;
+    }
+
+
+
+    #footer {
+        width: 100%;
+        height: 315px;
+        display: grid;
+        background-color: black;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 20%;
+    }
+
+    #footer #description_footer {
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+        height: 100%;
+        /* background-color: green; */
+    }
+
+    /* #information {
+        background-color: indigo;
+    } */
+    
+    #information h1 {
+        /* background-color: lawngreen; */
+        margin-top: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #information summary {
+        /* background-color: tomato; */
+        color: white;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+
+    }
+
+    #information details p {
+        color: white;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #information p {
+        font-family: 'Noto Sans KR', sans-serif;
+        color: gray;
+    }
+
+    #information div {
+        height: 50px;
+        width: 300px;
+        /* background-color: greenyellow; */
+        float: right;
+        margin-top: -120px;
+        margin-right: 0;
+    }
+
+    #information div h4 {
+        float: left;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+        color: gray;
+        margin-right: 20px;
+    }
+
+    #information div h4:first-child:hover {
+        color: white;
+        background-color: #3b5998;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    #information div h4:nth-child(2):hover {
+        color:white;
+        background: linear-gradient(45deg, #fff600, #ff0060, #6c00ff);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    #information div h4:last-child:hover {
+        color: #fae100;
+        background-color: #59473f;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    #autonav {
+        position: absolute;
+        left: 95%;
+        width: 5%;
+        height: 3vmax;
+        background-image: url("./hamburgericon.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: #f0ede6;
+    }
+
+    #autonav:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    #hamberger {
+        position: absolute;
+        width: 30%;
+        height: 50%;
+        padding-top: 2.5%;
+        left: 35%;
+        background-color: black;
+    }
+
+    #navreset {
+        width: 10%;
+        height: 10%;
+        /* background-color: pink; */
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        background-image: url("./xicon.png");
+        background-size: 80% 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 100%;
+    }
+
+    #navreset:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
+
+    #hamberger div {
+        width: 50%;
+        height: 10%;
+        background-color: #f0ede6;
+        margin-left: 25%;
+        margin-top: 2.7%;
+        text-align: center;
+        border-radius: 50px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+        padding-top: 1%;
+    }
+
+    #hamberger div:hover {
+        cursor: pointer;
+        background-color: gray;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+}

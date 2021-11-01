@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 폰트라인  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+
+    <!-- <script src = "js//test.js"></script> -->
+
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="css//main//mobilesize.css">
+    <link rel="stylesheet" href="css//main//tabletsize_2.css">
+    <link rel="stylesheet" href="css//main//tabletsize.css">
+    <link rel="stylesheet" href="css//main//pcsize.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        li, ol, ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+
+    <title>seoultour</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#hamberger").hide();
+        })
+        $(window).scroll(function(){
+            var SC1 = $(window).scrollTop();
+            var sc1= SC1+400;
+            $("#autonav").offset({top:sc1});
+            var sc2 = SC1+200;
+            $("#hamberger").offset({top:sc2});
+        })
+
+        $(function(){
+            $("#autonav").click(function(){
+            $("#wrap").css("opacity","0.2");
+            $("#hamberger").toggle(100, function(){
+                var SC1 = $(window).scrollTop();
+                var sc2 = SC1+200;
+                $("#hamberger").offset({top:sc2});
+            });
+        })
+        })
+
+        $(function(){
+            $("#navreset").click(function(){
+                $("#wrap").css("opacity", "1");
+                $("#hamberger").hide();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id = "wrap">
+
+        <!-- 헤더임 -->
+        <header>
+            <div id = "container_header">
+                <div id = "item_logo_header">
+                    <a href="#"><img src="./image/common/newlogo.png" alt = "x"></a>
+                </div>
+                <ul id = "item_nav_header">
+                    <li><a href = "./seoultour_sub.html">브랜드</a></li>
+                    <li><a href = "./seoultour_sub.html">어트랙션</a></li>
+                    <li><a href = "./seoultour_sub.html">맛집</a></li>
+                    <li><a href = "./seoultour_sub.html">축제</a></li>
+                    <li><a href = "./seoultour_sub.html">갤러리</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 슬라이더임 -->
+        <div id = "container_slider">
+            <h1 id = "quote">
+                서울에 <br>
+                오신 것을 환영합니다.
+            </h1>
+            <div id = "slider">
+                <img src ="image//main//slider//slider1.png" class = "imageslider" alt="X">
+                <img src ="image//main//slider//slider2.png" class = "imageslider" alt="X">
+                <img src ="image//main//slider//slider3.png" class = "imageslider" alt="X">
+                <img src ="image//main//slider//slider4.png" class = "imageslider" alt="X">
+            </div>
+
+            <div id = "button_slider">
+                <a href="#">
+                    <p>둘러보기</p>
+                    <img src="image//main//slider/1.png">
+                </a>
+            </div>
+        </div>
+        <!-- 섹션 부분임 -->
+        <section id = "container_section">
+            <div id ="container_brand">
+                <div id = "video_brand">
+                    <div>
+                        <video src="image//main//section//brand//brand2.mp4" autoplay muted loop=""></video>
+                    </div>
+                </div>
+                <div id = "description_brand">
+                    <div id = "first_description">
+                        <div><h3>브랜드</h3></div>
+                        <div id = "button_brand">
+                            <a href="#">
+                                둘러보기
+                            </a>
+                            <img src="underline.png">
+                        </div>
+                    </div>
+
+                    <div id = "second_description">
+                        <div><h3>Now In Seoul</h3></div>
+                        <p>
+                            Now In Seoul은 서울관광재단과 협의하여<br>
+                            여러 테마에 맞춘 다양한 여행정보를 제공합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id ="container_attraction">
+                <div id ="video_attraction">
+                    <div>
+                        <video src="image//main//section//attraction//attraction2.mp4" autoplay muted loop=""></video>
+                    </div>
+                </div>
+                <div id ="description_attraction">
+                    <div id ="first_description">
+                        <div><h3>어트랙션</h3></div>
+                        <div id ="button_attraction">
+                            <a href="#">
+                                둘러보기
+                            </a>
+                            <img src="underline.png">
+                        </div>
+                    </div>
+    
+                    <div id ="second_description">
+                        <div><h3>수 많은 볼거리</h3></div>
+                        <p>
+                            대한민국의 수도인 서울은
+                            현대적이고 첨단 기술의 고층 빌딩,
+                            전통적인 사찰과 고궁,<br>
+                            현대적인 노점상과 거리가 공존하여,
+                            여행객들에게 많은 볼거리를 제공합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id ="container_food">
+                <div id = "video_food">
+                    <div>
+                        <video src="image//main//section//food/food2.mp4" autoplay muted loop=""></video>
+                    </div>
+                </div>
+                <div id = "description_food">
+                    <div id = "first_description">
+                        <div><h3>음식</h3></div>
+                        <div id = "button_food">
+                            <a href="#">
+                                둘러보기
+                            </a>
+                            <img src="underline.png">
+                        </div>
+                    </div>
+
+                    <div id = "second_description">
+                        <div><h3>이색적인 음식</h3></div>
+                        <p>
+                            유동 인구가 많은 서울은
+                            전국 방방곡곡 다양한 음식들과,<br>
+                            대중적인 음식부터 럭셔리한 음식까지,
+                            다양한 음식을 맛보실 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id ="container_carnival">
+                <div id = "video_carnival">
+                    <div>
+                        <video src="image//main//section//carnival/carnival2.mp4" autoplay muted loop=""></video>
+                    </div>
+                </div>
+                <div id = "description_carnival">
+                    <div id = "first_description">
+                        <div><h3>축제</h3></div>
+                        <div id = "button_carnival">
+                            <a href="#">
+                                둘러보기
+                            </a>
+                            <img src="underline.png">
+                        </div>
+                    </div>
+
+                    <div id = "second_description">
+                        <div><h3>전통과 현대적인</h3></div>
+                        <p>
+                            공연, 전시, 축제, 체험, 교육 등 다양한 장르와,
+                            문화, 힐링, 계절, 이색, 전통 등 다양한 테마까지<br>
+                            누구나 쉽고 간단히 서울 다양한 지역에서 펼쳐지는
+                            수 많은 축제를 예약하여 즐기실 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id ="container_gallery">
+                <h1>인스타그램@NowInSeoul_갤러리</h1>
+                <div id = "slide">
+                    <div id = "picture_slide">
+                        <div>
+                            <img src="image/main/section/gallery/1.JPG" id ="gall">
+                        </div>
+                    </div>
+                    <div id = "button"> 
+                        <button id = "left" onclick="GallerySlideLeft()">왼쪽</button>
+                        <button id = "right" onclick="GallerySlideRight()">오른쪽</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 풋터풋터풋터풋터풋터풋터풋터풋터풋터풋터풋터 -->
+        <div id = "footer">
+            <div id = "description_footer">
+                <div id = "information">
+                    <h1>About us Now In Seoul</h1>
+                    <details>
+                        <summary>찾아오시는 길</summary>
+                        <p>03190, 서울 종로구 청계천로85 (31빌딩) 6층 TEL:02-3788-0800</p>
+                        <p>대표이사 길기연 사업자등록번호 : 245-82-00220</p>
+                    </details>
+                    <p>Copyright 2021. Cotieshop All rights reserved.</p>
+                    <div>
+                        <h4>페이스북</h4>
+                        <h4>인스타그램</h4>
+                        <h4>카카오</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id = "autonav">
+            <div id = "button"></div>
+        </button>
+ 
+    </div>
+    <div id ="hamberger">
+        <button id ="navreset">
+        </button>
+        <div><a href = "./seoultour_sub.html">브랜드</a></div>
+        <div><a href = "./seoultour_sub.html">어트랙션</a></div>
+        <div><a href = "./seoultour_sub.html">맛집</a></div>
+        <div><a href = "./seoultour_sub.html">축제</a></div>
+        <div><a href = "./seoultour_sub.html">갤러리</a></div>
+    </div>
+
+    <script>
+        var slideslider = 0;
+        autoslide1();
+        function autoslide1() {
+            var i;
+            var slide1 = document.getElementsByClassName("imageslider");
+            for(i = 0; i < slide1.length; i++) {
+                slide1[i].style.display = "none";
+            }
+
+            slideslider++;
+            if (slideslider > slide1.length) {
+                slideslider = 1;
+            }
+            slide1[slideslider-1].style.display = "block";
+            setTimeout(autoslide1, 2000);
+        }
+
+        var Slide = 1;
+
+        function GallerySlideRight() {
+            if (Slide == 10) {
+                Slide = 1;
+            }
+            Slide++;
+            var Gallery = document.getElementById("gall");
+            Gallery.setAttribute('src', 'image/main/section/gallery/'+Slide+'.JPG');
+
+        }
+
+        function GallerySlideLeft() {
+            Slide--;
+            if (Slide < 1) {
+                Slide = 10;
+            }
+            var Gallery = document.getElementById("gall");
+            Gallery.setAttribute('src', 'image/main/section/gallery/'+Slide+'.JPG');
+        }
+
+
+
+
+    </script>
+</body>
+</html>

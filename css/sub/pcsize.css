@@ -1,0 +1,518 @@
+@media screen and  (min-width:1300px) {
+    #wrap {
+        width: 100%;
+        height: auto;
+        background-color: #f0ede6;
+    }
+
+    header {
+        /* margin: 0 auto; */
+        width: 100%;
+        height: 150px;
+        background-color: #f0ede6;
+        position: absolute;
+        top: 0;
+    }
+
+    #container_header {
+        position: relative;
+        top: 0; 
+        left: 0;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        row-gap: 0;
+        column-gap: 0;
+        /* background-color: brown; */
+        
+    }
+
+    #container_header #item_logo_header {
+        width: 35%;
+        height: 70%;
+        /* justify-self: start; */
+        /* background-color: coral;  */
+        margin-left: 10%;
+        text-align: center;
+        align-self: end;
+    }
+
+    #container_header #item_logo_header img {
+        width: 70%;
+        height: 100%;
+    }
+
+    #container_header #item_nav_header {
+        /* background-color: purple; */
+        display: grid;
+        grid-template-columns: 3fr 4fr 2fr 2fr 3fr;
+        grid-template-rows: 1fr;
+        margin-right: 30%;
+        column-gap: 7%;
+        /* border: solid black; */
+    }
+
+    #container_header #item_nav_header li {
+        /* background-color: royalblue; */
+        text-align: center;
+        align-self: end;
+        /* justify-self: stretch; */
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 18px;
+        position: relative;
+    }
+
+    #container_header #item_nav_header li:after {
+        content: "";
+        border-bottom: 3px black solid ;
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        width: 0%;
+        transition: all 0.2s ease;
+    }
+
+    #container_header #item_nav_header li::before {
+        content: "";
+        border-bottom: 3px black solid ;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        transition: all 0.2s ease;
+    }
+
+    #container_header #item_nav_header li:hover:after {
+        width: 50%;
+    }
+
+    #container_header #item_nav_header li:hover::before {
+        width: 50%;
+    }
+
+    #container {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+        background-color: black;
+        /* background-image: url("pad.png");
+        background-size: 101% 101%;
+        background-repeat: no-repeat;
+        background-position: center; */
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 3%;
+        box-shadow: 20px 20px 28px -4px #969696;  
+        transition: all 1s;
+    }
+
+    /* #container:hover {
+        width: 90%;
+        height: 60%;
+    } */
+
+
+
+    #image_1 {
+        width: 98%;
+        height: 98%;
+        /* background-color: lawngreen; */
+        background-image: url("newmap.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        top: 1%;
+        left: 1%;
+        border-radius: 3%;
+    }
+
+    /* #image_2 {
+        width: 100%;
+        height: 100%;
+        background: url(subway.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: aquamarine;
+        position: relative;
+        overflow: hidden;
+        display: none;
+    } */
+
+    #container_description {
+        width: 98%;
+        height: 98%;
+        top: 1%;
+        left: 1%;
+        border-radius: 3%;
+        /* background-color: #b1cdd1; */
+        background-color: #f9f9f9;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    #container_description div {
+        float: right;
+        width: 39%;
+        height: 80%;
+        margin-top: 5%;
+        z-index: -1;
+    }
+
+    #container_description div img {
+        width: 100%;
+        height: 80%;
+    }
+    #container_description div button {
+        width: 15%;
+        height: 15%;
+        margin-left: 50%;
+        transform: translate(-50%);
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 100%;
+        margin-top: 5%;
+        font-size: 0.9vmax;
+    }
+
+    #container_description div div {
+        position: absolute;
+        top: -15%;
+        left: 0;
+        width: 160%;
+        height: 150%;
+        /* background-color: #f9f9f9; */
+        background-color: #f9f9f9;
+        display: none;
+    }
+
+    #container_description h3 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1vmax;
+    }
+
+    #container_description p {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 0.9vmax;
+        color: gray;
+    }
+
+    #container_description button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
+    
+    #description_1 {
+        /* background-color: red; */
+        display: none;
+    }
+    #description_2 {
+        /* background-color:gray; */
+        display: none;
+    }
+    #description_3 {
+        display: none;
+    }
+    #description_4 {
+        display: none;
+    }
+    #description_5 {
+        display: none;
+    }
+    #description_6 {
+        display: none;
+    }
+    #description_7 {
+        display: none;
+    }
+    #description_8 {
+        display: none;
+    }
+    #description_9 {
+        display: none;
+    }
+    #description_10 {
+        display: none;
+    }
+    #description_11 {
+        display: none;
+    }
+    #description_12 {
+        display: none;
+    }
+    #description_13 {
+        display: none;
+    }
+    #description_14 {
+        display: none;
+    }
+    #description_15 {
+        display: none;
+    }
+    #description_16 {
+        display: none;
+    }
+    #description_17 {
+        display: none;
+    }
+    #description_18 {
+        display: none;
+    }
+    #description_19 {
+        display: none;
+    }
+    #description_20 {
+        display: none;
+    }
+    #description_21 {
+        display: none;
+    }
+
+    #image_1 button {
+        width: 2%;
+        height: 2%;
+        background-color: #e9998e;
+        border-radius: 100%;
+        position: absolute;
+        /* background-image: url("button.png");
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat; */
+        border: none;
+        z-index: 2;
+    }
+
+    #image_1 button:hover {
+        background-color: #114196;
+        cursor: pointer;
+    }
+
+    #image_1 button:active {
+        filter: brightness(0.5)
+    }
+
+    #image_1 #button_1 {
+        top: 50%;
+        left: 50%;
+    }
+
+    #image_1 #button_2 {
+        top: 50%;
+        left: 55%;
+    }
+
+    #image_1 #button_3 {
+        top: 46%;
+        left: 48%;
+    }
+
+    #image_1 #button_4 {
+        top: 53%;
+        left: 56%;
+    }
+
+    #image_1 #button_5 {
+        top: 53%;
+        left: 50%;
+    }
+
+    #image_1 #button_6 {
+        top: 53%;
+        left: 46%;
+    }
+
+    #image_1 #button_6 {
+        top: 53%;
+        left: 46%;
+    }
+
+    #image_1 #button_7 {
+        top: 50%;
+        left: 46%;
+    }
+
+    #image_1 #button_7 {
+        top: 50%;
+        left: 45%;
+    }
+
+    #image_1 #button_8 {
+        top: 30%;
+        left: 40%;
+    }
+
+    #image_1 #button_9 {
+        top: 70%;
+        left: 40%;
+    }
+
+    #image_1 #button_10 {
+        top: 60%;
+        left: 50%;
+    }
+
+    #image_1 #button_11 {
+        top: 75%;
+        left: 55%;
+    }
+
+    #image_1 #button_12 {
+        top: 50%;
+        left: 70%;
+    }
+
+    #image_1 #button_13 {
+        top: 70%;
+        left: 65%;
+    }
+
+    #image_1 #button_14 {
+        top: 50%;
+        left: 35%;
+    }
+
+    #image_1 #button_15 {
+        top: 66%;
+        left: 75%;
+    }
+
+    #image_1 #button_16 {
+        top: 45%;
+        left: 40%;
+    }
+
+    #image_1 #button_17 {
+        top: 40%;
+        left: 40%;
+    }
+
+    #image_1 #button_18 {
+        top: 50%;
+        left: 20%;
+    }
+
+    #image_1 #button_19 {
+        top: 25%;
+        left: 65%;
+    }
+
+    #image_1 #button_20 {
+        top: 43%;
+        left: 30%;
+    }
+
+    #image_1 #button_21 {
+        top: 50%;
+        left: 85%;
+    }
+
+    #tooltip {
+        width: 8vmax;
+        background-color: #f9f9f9;
+        display: none;
+        z-index: 4;
+        border-radius: 10px;
+    }
+
+    button:hover #tooltip {
+        margin-left: 1vmax;
+        display: block;
+        font-family: 'Noto Sans KR', sans-serif;
+        z-index: 4;
+        font-size: 1vmax;
+    }
+
+    #footer {
+        width: 100%;
+        height: 315px;
+        display: grid;
+        background-color: black;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        position:absolute;
+        top: 100%;
+    }
+
+    #footer #description_footer {
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+        height: 100%;
+        /* background-color: green; */
+    }
+
+    /* #information {
+        background-color: indigo;
+    } */
+    
+    #information h1 {
+        /* background-color: lawngreen; */
+        margin-top: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #information summary {
+        /* background-color: tomato; */
+        color: white;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+
+    }
+
+    #information details p {
+        color: white;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #information p {
+        font-family: 'Noto Sans KR', sans-serif;
+        color: gray;
+    }
+
+    #information div {
+        height: 50px;
+        width: 300px;
+        /* background-color: greenyellow; */
+        float: right;
+        margin-top: -120px;
+        margin-right: 0;
+    }
+
+    #information div h4 {
+        float: left;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 20px;
+        color: gray;
+        margin-right: 20px;
+    }
+
+    #information div h4:first-child:hover {
+        color: white;
+        background-color: #3b5998;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    #information div h4:nth-child(2):hover {
+        color:white;
+        background: linear-gradient(45deg, #fff600, #ff0060, #6c00ff);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    #information div h4:last-child:hover {
+        color: #fae100;
+        background-color: #59473f;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+}
