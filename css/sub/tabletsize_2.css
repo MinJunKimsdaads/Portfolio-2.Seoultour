@@ -20,7 +20,7 @@
         left: 0;
         height: 100%;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         row-gap: 0;
         column-gap: 0;
         /* background-color: brown; */
@@ -28,7 +28,7 @@
     }
 
     #container_header #item_logo_header {
-        width: 50%;
+        width: 80%;
         height: 70%;
         /* justify-self: start; */
         /* background-color: coral;  */
@@ -58,7 +58,7 @@
         align-self: end;
         /* justify-self: stretch; */
         font-family: 'Noto Sans KR', sans-serif;
-        font-size: 1vmax;
+        font-size: 0.5px;
         position: relative;
     }
 

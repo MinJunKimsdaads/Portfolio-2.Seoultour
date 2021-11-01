@@ -176,7 +176,7 @@
         position:relative;
         top: -450px;
         width: 100%;
-        height: 4400px;
+        height: 3000px;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
         row-gap: 150px;
