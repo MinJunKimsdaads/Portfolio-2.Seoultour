@@ -15,6 +15,7 @@
 <h2>소감</h2>
 <p>1. 반응형 작업 시 css코드가 너무 길어짐.</p>
 <p>2. meta 태그의 대한 공부가 필요.</p>
+<p>3. 웹사이트에 기능이 추가된 웹애플리케이션 제작방법을 찾아 볼 것.</p>
 
 <a href="https://web-portfolio-2-seoultour-vpkwa2blid77oz2.sel4.cloudtype.app/">Demo</a>
 
