@@ -17,6 +17,6 @@
 <p>2. meta 태그의 대한 공부가 필요.</p>
 <p>3. 웹사이트에 기능이 추가된 웹애플리케이션 제작방법을 찾아 볼 것.</p>
 
-<a href="https://web-portfolio-2-seoultour-vpkwa2blid77oz2.sel4.cloudtype.app/">Demo</a>
+<a href="https://minjunkimsdaads.github.io/Portfolio-2.Seoultour/">Demo</a>
 
 <h6>2023-10-29 노션 -> git으로 이동</h6>
